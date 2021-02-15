@@ -1,0 +1,47 @@
+body{
+    width: 960px;
+    background-color: lightskyblue;
+    margin: auto;
+
+}
+.logo{
+    float: inline-start;
+    width: 100px;
+}
+header h1{
+    text-align: center;
+    background-color: brown;
+    color: greenyellow;
+}
+header h2{
+    background-color: indigo;
+    color: lavender;
+    text-align: center;
+}
+header nav ul li{
+    background-color: lawngreen;
+    display: inline;
+    line-height: 25px;
+    font-size: large;
+    margin: 40px;
+}
+header nav ul{
+    text-align: center;
+}
+
+.one{
+    background-color: lightsalmon;
+    color: maroon;
+    text-align: center;
+    font-size: large;
+    line-height: 30px;
+}
+footer{
+    background-color: maroon;
+    color: mintcream;
+    font-size: large;
+}
+p{
+    font-size: large
+}
+  
