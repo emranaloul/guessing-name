@@ -1,7 +1,8 @@
 'use strict'
+let score = 0;
 
-let userName = prompt('What is your name?')
-alert('Our Greeting, ' + userName)
+let userName = prompt('What is your name?');
+alert('Our Greeting, ' + userName);
 
 let myFavTeam = prompt('Do you think Barcelona is my favourite team?', 'yes or no');
 
@@ -74,4 +75,48 @@ else if(historyPlayer.toLowerCase() == 'no'){
 console.log('I believe that messi is the best player in the history, Am I wrong? ' + historyPlayer);
 
 alert('welcome ' + userName + ' to our website');
+
+
+
+for ( let i=0 ; i <= 3 ; i++){
+
+let myAgeQus = prompt('How old am I?');
+let myAge = 28;
+
+if( myAge == myAgeQus ){
+    alert('yes I am 28');
+    score++
+    break;
+}
+else if ( myAgeQus > myAge ){
+    alert('you are to high, try again..')
+   
+} else if( myAgeQus < myAge ) {
+    alert('you are to low, try again..') 
+}
+}
+
+alert('I am 28');
+
+let myFavPl = ['messi', 'iniesta', 'xavi', 'rivaldo', 'ronaldinho', 'puyol', 'alves', 'pirlo', 'zidane','henry'];
+console.log(myFavPl);
+
+for( let i = 0; i < 6; i++){
+
+    let favPl = prompt('who is my favourite player?').toLowerCase();
+
+    for (let index = 0; index < myFavPl.length; index++) {
+        
+    if(favPl == myFavPl[index]){
+        alert('Correct')
+        score++
+    }/* else{
+        alert('wrong')
+    }*/
+    
+}
+}
+alert('your score is ' + score +' of 7')
+
+
 

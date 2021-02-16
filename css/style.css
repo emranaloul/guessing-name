@@ -44,4 +44,22 @@ footer{
 p{
     font-size: large
 }
+main ul li{
+    background-color: aqua;
+    color: blue;
+    line-height: 20px;
+}
+main ol li:nth-child(even){
+    background-color: cornsilk;
+}
+main ol li:nth-child(odd){
+    background-color: lightcoral;
+}
+main ol li{
+    font-size: large;
+    line-height: 30px;
+    border-radius: 7px 7px;
+    color: darkred;
+}
+
   
