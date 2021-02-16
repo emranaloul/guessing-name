@@ -11,6 +11,7 @@ while (myFavTeam.toLowerCase() != 'yes' && myFavTeam.toLowerCase() != 'no') {
 }
 if(myFavTeam.toLowerCase() == 'yes'){
     alert('yes, you are right!!');
+    score++;
 } 
 else if(myFavTeam.toLowerCase() == 'no'){
 
@@ -25,6 +26,7 @@ while (myFavPlayer.toLowerCase() != 'yes' && myFavPlayer.toLowerCase() != 'no') 
 }
 if(myFavPlayer.toLowerCase() == 'yes'){
     alert('yes, you are definitely right!!');
+    score++;
 } 
 else if(myFavPlayer.toLowerCase() == 'no'){
 
@@ -43,6 +45,7 @@ if(myFavLeague.toLowerCase() == 'yes'){
 else if(myFavLeague.toLowerCase() == 'no'){
 
     alert('you are right');
+    score++;
 } 
 console.log('Do you think I like premiere leage over la liga? ' + myFavLeague);
 
@@ -57,6 +60,7 @@ if(footballPlaying.toLowerCase() == 'yes'){
 else if(footballPlaying.toLowerCase() == 'no'){
 
     alert('unfortunately, you are right');
+    score++;
 } 
 console.log('Do you think I`m a good football player? ' + footballPlaying);
 
@@ -71,6 +75,7 @@ if(historyPlayer.toLowerCase() == 'yes'){
 else if(historyPlayer.toLowerCase() == 'no'){
 
     alert('gladly, we have the same belief');
+    score++;
 } 
 console.log('I believe that messi is the best player in the history, Am I wrong? ' + historyPlayer);
 
@@ -84,8 +89,8 @@ let myAgeQus = prompt('How old am I?');
 let myAge = 28;
 
 if( myAge == myAgeQus ){
-    alert('yes I am 28');
-    score++
+    alert('Correct');
+    score++;
     break;
 }
 else if ( myAgeQus > myAge ){
@@ -101,21 +106,22 @@ alert('I am 28');
 let myFavPl = ['messi', 'iniesta', 'xavi', 'rivaldo', 'ronaldinho', 'puyol', 'alves', 'pirlo', 'zidane','henry'];
 console.log(myFavPl);
 
-for( let i = 0; i < 6; i++){
+for( let i = 0 ; i < 6 ; i++){
 
-    let favPl = prompt('who is my favourite player?').toLowerCase();
+    alert(myFavPl);
 
-    for (let index = 0; index < myFavPl.length; index++) {
+    let favPl = prompt('who is my  first favourite player?').toLowerCase();
         
-    if(favPl == myFavPl[index]){
+    if(favPl == myFavPl[9]){
         alert('Correct')
-        score++
-    }/* else{
-        alert('wrong')
-    }*/
+        score++;
+        break;
+    } else{
+        alert('wrong... try again')
+    }
     
 }
-}
+
 alert('your score is ' + score +' of 7')
 
 
