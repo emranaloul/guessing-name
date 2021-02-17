@@ -1,8 +1,12 @@
 'use strict'
 let score = 0;
-
 let userName = prompt('What is your name?');
+const user  = function (userName){
+
 alert('Our Greeting, ' + userName);
+}
+user();
+
 
 let myFavTeam = prompt('Do you think Barcelona is my favourite team?', 'yes or no');
 
